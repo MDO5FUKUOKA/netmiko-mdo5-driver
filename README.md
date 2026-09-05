@@ -33,7 +33,7 @@ from netmiko import ConnectHandler
 
 conn = ConnectHandler(
     device_type="sundenshi_se220",
-    host="192.168.62.1",
+    host="192.0.2.1",
     username="admin",
     password="********",
 )
@@ -49,7 +49,7 @@ conn.disconnect()
 from netmiko_mdo5_driver import SundenshiSE220SSH
 
 conn = SundenshiSE220SSH(
-    host="192.168.62.1",
+    host="192.0.2.1",
     username="admin",
     password="********",
 )
